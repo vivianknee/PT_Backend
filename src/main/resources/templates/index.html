@@ -12,19 +12,19 @@
 <th:block layout:fragment="body" th:remove="tag">
     <!-- Start of body content specific to page -->
     <div class="px-5 py-5 mx-auto">
-        <h1><strong>Java Home Page</strong></h1>
+        <h1><strong>Pocket Therapist Home Page</strong></h1>
         <div class="row">
             <div class="col-4">
                 <div class="card">
                     <img class="card-img-top" th:src="@{/images/java.png}" alt="Java Development" height="250">
                     <div class="card-body">
-                    <h5 class="card-title">What should Java Developers learn?</h5>
+                    <h5 class="card-title">Java POJO Concepts Learned</h5>
                     <p class="card-text">
                         <ol>
-                            <li>Java 11-17 is used for PBL. Java 8 appears to be College Board standard.  Java features like Reactive Streams, HTTP2 client, JShell, React JS are more recent than 8.</li>
-                            <li>GitHub.  Learning to master managing change, branches, pull requests, and more.</li>
-                            <li>Development DevOps. Java programmers should have a passion for managing the environment and learning automation (Git, Maven, Docker).</li>
-                            <li>REST and Microservice using Spring.  Mastering creating and consuming RESTful APIs</li>
+                            <li>Encapsulation: bundling the data (variables) and the methods (functions) that work on the data into a single unit called a class.</li>
+                            <li>Inheritance: you can create a new class (child class) based on an existing class (parent class). The child class inherits the attributes and behaviors of the parent class.</li>
+                            <li>Abstraction: a way to define the essential functions or behaviors that users need to work with, while hiding the inner workings and complexities. Ex: private vs public variables</li>
+                            <li>Polymorphism: objects of different classes can be treated as objects of a common parent class. This allows you to write more flexible code because you can use the same method or interface to work with different types of objects.</li>
                         </ol>
                     </p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -35,13 +35,12 @@
                 <div class="card">
                     <img class="card-img-top" th:src="@{/images/spring.png}" alt="Spring Development" height="250">
                     <div class="card-body">
-                    <h5 class="card-title">What is Spring?</h5>
+                    <h5 class="card-title">Our Project</h5>
                     <p class="card-text">
                         <ol>
-                            <li>Spring Framework is the most popular application development framework of Java. </li>
-                            <li>Spring Boot helps to create a stand-alone application with less configuration.</li>
-                            <li>Spring MVC is a model view controller-based web framework under the Spring framework.</li>
-                            <li>ThymeLeaf is a server-side Java template engine, supports HTML5 JVM web development, and provides full integration with Spring Framework.</li>
+                            <li>Your Pocket Therapist uses an AI Face algorithm to accurately understand the user's emotions and provide advice/quotes in response.</li>
+                            <li>Includes an emotion detector to detect expressions in images and output emotions that link directly to corresponding quotes.</li>
+                            <li>Made by Vivian, Tanisha, Sreeja, and Isabelle</li>
                         </ol>
                     </p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>

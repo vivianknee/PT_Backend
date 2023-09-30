@@ -45,8 +45,7 @@ public class Quote {
     q1.setQuote("When life gives you lemons, make lemonade!"); 
     q1.setEmotion("happy"); 
    
-
-   Quote q2 = new Quote(); 
+    Quote q2 = new Quote(); 
     q2.setQuote("Keep calm and carry on"); 
     q2.setEmotion("sad");
 
