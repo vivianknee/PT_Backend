@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/api/quotes")
+@RequestMapping(path = "/api/quote")
 
 public class QuoteApiController {
     @Autowired
@@ -31,13 +31,13 @@ public class QuoteApiController {
         quoteService.saveQuotes(quotes);
     }
     /* GET List of Quotes */
-    @GetMapping("/quotes")
+    @GetMapping
     public ResponseEntity<List<Quote>> getQuote() {
         return new ResponseEntity<>( repository.findAll(), HttpStatus.OK);
     }
 
     /* GET random Quote by emotion */
-    @GetMapping("/quotes/{emotion}")
+    @GetMapping("/{emotion}")
     public String getEmotionByRandomEmotion(@PathVariable String emotion) {
         List<Quote> quotes = repository.findByEmotionIgnoreCase(emotion);
 

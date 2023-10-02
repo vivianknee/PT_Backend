@@ -38,7 +38,7 @@ public class Quote {
         this.quote = quote; 
         this.emotion = emotion; 
    }
-
+   
    public static Quote[] init() {
 
     Quote q1 = new Quote(); 
