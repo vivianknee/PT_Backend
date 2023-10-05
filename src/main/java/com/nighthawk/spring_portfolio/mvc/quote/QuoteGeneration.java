@@ -13,18 +13,18 @@ public class QuoteGeneration {
     CommandLineRunner commandLineRunner(
             QuoteJpaRepository repository) {
         return args -> {
-            Quote quote1 = new Quote(
+            Quote q1 = new Quote(
                 "When life gives you lemons, make lemonade", 
                 "happy"
             ); 
 
-            Quote quote2 = new Quote(
+            Quote q2 = new Quote(
                 "Keep calm and carry on", 
                 "sad"
             );
 
             repository.saveAll(
-                    List.of(quote1, quote2)
+                    List.of(q1, q2)
             );
         };
     }

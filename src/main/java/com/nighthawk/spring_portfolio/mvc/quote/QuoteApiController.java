@@ -25,12 +25,6 @@ public class QuoteApiController {
     @Autowired
     private QuoteJpaRepository repository; 
 
-    @PostConstruct
-    public void init() {
-        Quote[] quotes = Quote.init();
-        quoteService.saveQuotes(quotes);
-    }
-    /* GET List of Quotes */
     @GetMapping
     public ResponseEntity<List<Quote>> getQuote() {
         return new ResponseEntity<>( repository.findAll(), HttpStatus.OK);
