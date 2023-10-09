@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "https://tanishapatil1234.github.io/student/2023/10/08/JournalApp_IPYNB_2_.html")
 @RequestMapping(path = "/api/quote")
 
 public class QuoteApiController {
