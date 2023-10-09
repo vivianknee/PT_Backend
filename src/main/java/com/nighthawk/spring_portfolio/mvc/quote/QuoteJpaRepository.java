@@ -11,3 +11,4 @@ public interface QuoteJpaRepository extends JpaRepository<Quote, Long>{
     void save(String Quote); 
     List<Quote> findByEmotionIgnoreCase(String emotion);
 }
+
