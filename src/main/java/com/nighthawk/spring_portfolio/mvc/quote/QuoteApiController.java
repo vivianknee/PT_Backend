@@ -66,7 +66,7 @@ public class QuoteApiController {
         
         Quote savedQuote = repository.save(existingQuote);
         return new ResponseEntity<>(savedQuote, HttpStatus.OK);
-}
+    }
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> deleteQuote(@PathVariable Long id) {
@@ -78,6 +78,6 @@ public class QuoteApiController {
         
         repository.delete(existingQuote);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-}
+    }
 
 }
