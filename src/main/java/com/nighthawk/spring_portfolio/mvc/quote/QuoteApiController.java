@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "http://127.0.0.1:8077")
 @RequestMapping(path = "/api/quote")
 
 public class QuoteApiController {
