@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+	<category>
+		<pattern>WHO ARE YOU</pattern>
+		<template>I'm your Pocket Therapist.</template>
+	</category>
+	<category>
+		<pattern>HAPPY</pattern>
+		<template>You seem like you're in a good mood! Want to share the joy by adding a quote?</template>
+	</category>
+	<category>
+		<pattern>SAD</pattern>
+		<template>What's on your mind? I'm here to help.</template>
+	</category>
+    <category>
+		<pattern>ANGRY</pattern>
+		<template>Why are you angry? Do you want to talk about it?</template>
+	</category>
+</aiml>
