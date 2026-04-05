@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM openjdk:18
+FROM eclipse-temurin:17
 WORKDIR /app
 COPY . /app
 RUN ./mvnw package
